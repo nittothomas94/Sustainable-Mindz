@@ -1,5 +1,9 @@
-import Navbar from './components/navbar/page';
+import EmpowerHome from './components/home-page-components/empower/page';
 
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <EmpowerHome />
+    </>
+  );
 }
