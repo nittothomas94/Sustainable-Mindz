@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <div className="bg-gradient-to-b from-purple-300 to-purple-100 h-15 flex items-center justify-between md:px-[110px]">
       <p className="w-fit  size-[15px]">
-        Copyright © 2024 Sustainable Mindz. All Rights Reserved.
+        Copyrightttttttt © 2024 Sustainable Mindz. All Rights Reserved.
       </p>
 
       <div className="flex gap-2 items-center justify-center">
