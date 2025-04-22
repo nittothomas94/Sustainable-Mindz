@@ -4,7 +4,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const ContactUs = ({ contactImage }) => {
   return (
-    <div className="flex flex-col gap-10 border md:flex-row md:items-start md:px-[194px] md:py-10">
+    <div className="flex flex-col px-[10px] gap-10 md:flex-row md:items-start md:px-[194px] md:py-10">
       <div className="flex flex-col gap-4 py-5 md:w-[55%]">
         <h1 className="font-bold text-2xl">Contact Us</h1>
         <h1>Get In Touch With Us Now</h1>
@@ -82,11 +82,11 @@ const ContactUs = ({ contactImage }) => {
         </form>
       </div>
 
-      <div className="md:w-[48%] md:h-[511px] border">
+      <div className="md:w-[48%] md:h-[511px]">
         <img
           src={contactImage}
           alt="girld speek Home"
-          className="w-full h-100 md:w-full md:h-full border"
+          className="w-full h-90 md:w-full md:h-full"
         />
       </div>
     </div>

@@ -4,8 +4,8 @@ export default function EmpowerHome({ paragraph, butText }) {
   return (
     <div className="bg-[url(/images/purple-bg.png)] h-112 relative md:h-150">
       <Navbar />
-      <div className="border flex flex-col items-center justify-center gap-5 mt-5">
-        <p className="text-[20px] w-fit  md:w-[50%] font-bold border text-center md:font-bold md:text-[42px]">
+      <div className="flex flex-col items-center justify-center gap-5 mt-5">
+        <p className="text-[20px] w-fit md:w-[50%] font-bold text-center md:font-bold md:text-[42px]">
           {paragraph}
         </p>
 
@@ -16,7 +16,7 @@ export default function EmpowerHome({ paragraph, butText }) {
         <img
           src="/images/system.png"
           alt="Sysytem image"
-          className="w-[301px] h-[272px] absolute top-75 border md:w-[411px] md:h-[380px] md:top-92"
+          className="w-[301px] h-[272px] absolute top-75 md:w-[411px] md:h-[380px] md:top-92"
         />
       </div>
     </div>
