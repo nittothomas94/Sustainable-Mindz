@@ -1,7 +1,9 @@
+// Root layout (includes Navbar, Footer)
+
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import Navbar from './components/navbar/page';
-import Footer from './components/footer/page';
+// import Navbar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -21,24 +23,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <header>
+      <head>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
           integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
-      </header>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex flex-col min-h-screen">
-          <Navbar />
+          {/* <Navbar /> */}
 
           {/* Main content grows to fill space */}
           <main className="flex-grow">{children}</main>
