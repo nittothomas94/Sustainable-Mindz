@@ -7,7 +7,7 @@ import ContactUs from './components/contact/contact';
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 bg-white">
       <EmpowerHome
         paragraph="Empower Your Brand with Sustainable Mindz Influencer Platform"
         butText="Discover Opportunities"
