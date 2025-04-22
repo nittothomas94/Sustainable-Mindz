@@ -5,7 +5,7 @@ export default function EmpowerHome({ paragraph, butText }) {
     <div className="bg-[url(/images/purple-bg.png)] h-112 relative md:h-150">
       <Navbar />
       <div className="flex flex-col items-center justify-center gap-5 mt-5">
-        <p className="text-[20px] w-fit md:w-[50%] font-bold text-center md:font-bold md:text-[42px]">
+        <p className="text-[20px] w-fit text-black md:w-[50%] font-bold text-center md:font-bold md:text-[42px]">
           {paragraph}
         </p>
 
