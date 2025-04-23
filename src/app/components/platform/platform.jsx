@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { X } from 'lucide-react';
 
@@ -10,36 +10,40 @@ const cn = (...classes) => {
 };
 
 const Platform = () => {
-  const [activeIndex, setActiveIndex] = useState(2); // Set the third item (index 2) as active by default
+  const [activeIndex, setActiveIndex] = useState(null); // Set the third item (index 2) as active by default
+
+  useEffect(() => {
+    setActiveIndex(2);
+  }, []);
 
   const items = [
     {
       number: 1,
       title: 'creative discovery and curation',
       content:
-        'We strategize, script, and produce content apt for your product or service. Get the best in post-production services from us.',
-      image: '/placeholder.svg?height=400&width=400',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magnam ea dolor sapiente dolorum atque beatae, omnis non animi, blanditiis quos, voluptatem qui labore! Sed magni veniam non animi perspiciatis?',
+      image: '/images/girl-magini.png',
     },
     {
       number: 2,
       title: 'Campaign management and tracking tool',
       content:
-        'We strategize, script, and produce content apt for your product or service. Get the best in post-production services from us.',
-      image: '/placeholder.svg?height=400&width=400',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magnam ea dolor sapiente dolorum atque beatae, omnis non animi, blanditiis quos, voluptatem qui labore! Sed magni veniam non animi perspiciatis?',
+      image: '/images/girl-magini.png',
     },
     {
       number: 3,
       title: 'Content Management',
       content:
         'We strategize, script, and produce content apt for your product or service. Get the best in post-production services from us.',
-      image: '/placeholder.svg?height=400&width=400',
+      image: '/images/girl-magini.png',
     },
     {
       number: 4,
       title: 'Campaign reporting and strategy validation',
       content:
-        'We strategize, script, and produce content apt for your product or service. Get the best in post-production services from us.',
-      image: '/placeholder.svg?height=400&width=400',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magnam ea dolor sapiente dolorum atque beatae, omnis non animi, blanditiis quos, voluptatem qui labore! Sed magni veniam non animi perspiciatis?',
+      image: '/images/girl-magini.png',
     },
   ];
 
@@ -48,12 +52,12 @@ const Platform = () => {
   };
 
   return (
-    <div className="min-h-[100px] mt-40 flex flex-col items-center gap-10 pt-6 md:items-start md:px-[194px] md:py-10">
-      <h1 className="font-bold text-[29px] md:text-[39px] text-center md:text-left text-gray-800">
+    <div className="min-h-[100px] mt-50 flex flex-col items-center gap-10 pt-6 md:items-start md:px-[84px] md:py-10 lg:items-center">
+      <h1 className="font-bold text-[29px] md:text-[39px] text-center md:text-left text-gray-800 lg:text-center">
         Platform Benefits
       </h1>
 
-      <div className="w-full">
+      <div className="w-full lg:w-250">
         {items.map((item, index) => (
           <div key={index} className="border-t border-gray-200 last:border-b">
             {/* Accordion Header */}
@@ -86,7 +90,7 @@ const Platform = () => {
                 </div>
                 <div className="w-full md:w-[400px] h-[250px] md:h-[300px] relative">
                   <Image
-                    src={item.image || '/placeholder.svg'}
+                    src={item.image}
                     alt={item.title}
                     fill
                     className="object-contain"
