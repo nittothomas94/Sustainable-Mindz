@@ -9,7 +9,7 @@ export default function EmpowerHome({ paragraph, butText }) {
           {paragraph}
         </p>
 
-        <button className="w-fit h-10 bg-white rounded-2xl px-[15px] font-bold  m-auto">
+        <button className="w-fit h-10 bg-white rounded-2xl px-[15px] font-bold  m-auto cursor-pointer">
           {butText}
         </button>
 

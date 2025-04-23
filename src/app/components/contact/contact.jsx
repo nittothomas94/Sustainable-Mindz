@@ -75,7 +75,7 @@ const ContactUs = ({ contactImage }) => {
 
           <button
             type="submit"
-            className="px-4 py-2 text-sm bg-white text-purple-600 rounded-3xl border border-purple-100 shadow-md shadow-purple-200"
+            className="px-4 py-2 text-sm bg-white text-purple-600 rounded-3xl border border-purple-100 shadow-md shadow-purple-200 cursor-pointer"
           >
             SEND MESSAGE NOW
           </button>

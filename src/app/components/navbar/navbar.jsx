@@ -8,7 +8,7 @@ const Navbar = () => {
           className="w-25 h-10 md:w-30"
         />
       </div>
-      <button className="w-fit p-2 h-9 text-black rounded-[10px] md:w-[214px] md:h-[45px] md:rounded-[22.5px] bg-white">
+      <button className="w-fit p-2 h-9 text-black rounded-[10px] md:w-[214px] md:h-[45px] md:rounded-[22.5px] bg-white cursor-pointer">
         Request Proposals
       </button>
     </div>
