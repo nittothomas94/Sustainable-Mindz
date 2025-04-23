@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div className="bg-[url(/images/nav-bg.jpg)] flex items-center justify-between bg-top relative h-24 md:h-30 px-2 md:px-10 lg:justify-center lg:gap-100">
+    <div className="bg-[url(/images/nav-bg.jpg)] flex items-center justify-between bg-top relative h-24 md:h-30 px-2 md:px-10 lg:justify-center lg:gap-140">
       <div className="w-fit md:w-[246px]">
         <img
           src="/images/logo.png"
